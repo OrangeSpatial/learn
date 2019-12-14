@@ -49,7 +49,7 @@ public class AuthorizeController {
         String accessToken = gitHubProvider.getAccessToken(accessTokenDTO);
         GitHubUser user = gitHubProvider.getUser(accessToken);
         System.out.println(user);
-        return "404";
+        return "index";
     }
 
 

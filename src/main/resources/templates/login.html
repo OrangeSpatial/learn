@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link href="css/login_main.css" rel="stylesheet" />
+</head>
+<body >
+<div class="ui middle aligned inverted blue secondary pointing menu m-login-top">
+    <a class="item">DL WorkStation</a>
+    <a class="item active">测试</a>
+    <a class="item">新标签</a>
+    <div class="right menu">
+        <a class="ui item">登录</a>
+    </div>
+</div>
+<div class="m-login-bg">
+    <div class="ui container m-mobile-login" >
+        <div class="ui grid center aligned">
+            <div class="row">
+                <div class="sixteen wide tablet six wide computer column">
+                    <div class="ui left aligned  segment m-shadow">
+
+                        <div id="form1" class="ui form">
+
+                            <img src="img/DL_logo.png" alt="logo" class="ui center aligned big image">
+                            <div class="ui blue header center aligned content">欢迎登录</div>
+                            <div class="field">
+                                <!--                            <label>邮箱或用户名:</label>-->
+                                <div class="ui fluid icon input">
+                                    <input name="user_name" id="u_name" type="email" placeholder="邮箱或用户名" autocomplete="off" class="m-input">
+                                    <i class="icon mail outline"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <!--                            <label>密码:</label>-->
+                                <div class="ui fluid icon input">
+                                    <input name="password" id="u_pass" type="password" placeholder="密码" autocomplete="off" class="m-input"s>
+                                    <i class="icon key"></i>
+                                </div>
+                            </div>
+                            <div class="field">
+
+                                <a class="ui red right labeled icon button fluid" href="/gitHubLogin">
+                                    登录
+                                    <i class="icon sign spy"></i>
+                                </a>
+                                <div class="ui divider"></div>
+                                <div class="ui grid">
+                                    <div class="ui center aligned eight wide column">
+                                        <a href="retrievePwd.html">
+                                            忘记密码？
+                                        </a>
+                                    </div>
+                                    <div class="ui center aligned eight wide column">
+                                        <a class="" href="register.html">
+                                            免费注册
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui blue inverted vertical footer segment">
+    <div class="ui inverted stackable grid">
+        <div class="ui inverted center aligned six wide column">
+            <p class="ui inverted">Community</p>
+        </div>
+        <div class="ui center aligned seven wide column">
+            <a class="ui inverted sub header" href="#">法律声明</a> |
+            <a class="ui inverted sub header" href="#">隐私政策声明</a>
+        </div>
+    </div>
+</div>
+
+<!--    <script src="js/jquery.min.js"></script>-->
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+</body>
+</html>

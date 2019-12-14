@@ -1,0 +1,87 @@
+body{
+    overflow: hidden;
+    background-image: url('../img/whu.jpg');
+    background-size: cover;
+}
+
+.m-shadow{
+    box-shadow: 0 0 20px 2px rgba(0,0,0,0.2) !important;
+}
+
+.m-login-top{
+    /*height:4%*/
+}
+
+.m-login-bg{
+    background-image: url('../img/show.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 89%;
+}
+
+.m-login-nobg{
+    /*background-image: url('../static/img/show.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: 55%;*/
+    height: 89%;
+}
+
+.m-input{
+    width: 100%!important;
+    min-width:100%;
+}
+
+.ui.footer{
+    padding-bottom: 0em;
+    height: 8%;
+}
+/*字体颜色设置*/
+.m-red{
+    color: #ff3453;
+}
+
+.m-blue{
+    color: #00b5de!important;
+    font-weight: 500!important;
+}
+
+
+/*mobile*/
+
+.ui.container.m-mobile-login{
+    padding-top:13%;
+    margin-left: 40% !important;
+}
+
+.ui.container.m-mobile-register{
+    padding-top:2%;
+    margin-left: 40% !important;
+}
+
+.ui.container.m-mobile-retrievePwd{
+    padding-top:3%;
+    margin-left: 40% !important;
+}
+
+@media screen and (max-width: 768px) {
+
+    body{
+        background-image: url('../img/whu.jpg');
+        background-size: cover;
+    }
+
+    .ui.container.m-mobile-login{
+        padding-top:13%;
+        margin-left: 1em!important;
+    }
+
+    .ui.container.m-mobile-register{
+        padding-top:2%;
+        margin-left: 1em!important;
+    }
+
+    .ui.container.m-mobile-retrievePwd{
+        padding-top:3%;
+        margin-left: 1em!important;
+    }
+}

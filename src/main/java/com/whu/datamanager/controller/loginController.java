@@ -9,6 +9,15 @@ public class loginController {
 
     @RequestMapping("/")
     public String login(){
-        return "index";
+        return "login";
     }
+
+    @RequestMapping("/register")
+    public String register(){ return "register";}
+
+    @RequestMapping("/retrievePwd")
+    public String retrievePwd(){ return "retrievePwd";}
+
+    @RequestMapping("/updatePwd")
+    public String updatePwd(){ return "updatePwd";}
 }

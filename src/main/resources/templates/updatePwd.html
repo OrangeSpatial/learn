@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>重置密码</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link href="css/login_main.css" rel="stylesheet" />
+</head>
+<body>
+<div class="ui middle aligned inverted blue secondary pointing menu m-login-top">
+    <a class="item">DL WorkStation</a>
+    <a class="item active">测试</a>
+    <a class="item">新标签</a>
+    <div class="right menu">
+        <a class="ui item">登录</a>
+    </div>
+</div>
+<div class="m-login-nobg">
+        <div class="ui inverted container" style="padding-top: 9%">
+            <div class="ui grid center aligned">
+                <div class="row">
+                    <div class="sixteen wide tablet six wide computer column">
+                        <div class="ui left aligned vertical segment">
+
+                            <div id="form1" class="ui form">
+                                <img src="img/DL_logo.png" alt="logo" class="ui center aligned big image">
+                                <div class="ui header center aligned content m-blue">密码重置</div>
+                                <div class="ui divider"></div>
+                                <div class="field">
+                                    <div class="ui fluid icon input">
+                                        <input name="user_name" id="pwd1" type="password" placeholder="请输入新密码" autocomplete="off" class="m-input">
+                                        <i class="icon key"></i>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui fluid icon input">
+                                        <input name="user_name" id="pwd2" type="password" placeholder="请再次输入确认密码" autocomplete="off" class="m-input">
+                                        <i class="icon key"></i>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <a class="ui orange right labeled icon button fluid" href="#">
+                                        确定
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--    <div class="ui container m-mobile-retrievePwd" >-->
+<!--        <div class="ui grid center aligned">-->
+<!--            <div class="row">-->
+<!--                <div class="sixteen wide tablet six wide computer column">-->
+<!--                    <div class="ui left aligned vertical segment">-->
+
+<!--                        <div id="form1" class="ui form">-->
+<!--                            <div class="field">-->
+<!--                                <div class="ui divider"></div>-->
+
+<!--&lt;!&ndash;                                验证模态框&ndash;&gt;-->
+<!--                                <div class="ui page dimmer m-vcode">-->
+<!--                                    <div class="ui inverted container">-->
+<!--                                        <div class="ui grid center aligned">-->
+<!--                                            <div class="row">-->
+<!--                                            <div class="sixteen wide tablet six wide computer column">-->
+<!--                                                <div class="ui segment">-->
+<!--                                                    <div class="ui header center aligned content m-blue">安全验证</div>-->
+<!--                                                    <div class="ui divider"></div>-->
+<!--                                                    <div class="field">-->
+<!--                                                        <label class="ui grey" style="padding-bottom: 0.5em">确认邮箱信息:</label>-->
+<!--                                                        <div class="ui fluid icon input">-->
+<!--                                                            <input name="user_name" id="u—email" type="email" placeholder="邮箱" autocomplete="off" class="m-input">-->
+<!--                                                            <i class="icon mail outline"></i>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+
+<!--                                                    <div class="field">-->
+<!--                                                        <div class="ui grid">-->
+<!--                                                            <div class="ui eight wide column">-->
+<!--                                                                <input name="user_name"  type="email" placeholder="请输入6位数验证码" autocomplete="off" class="m-input">-->
+<!--                                                            </div>-->
+<!--                                                            <div class="ui eight wide column">-->
+<!--                                                                <a class="ui blue right labeled icon button fluid" href="#">-->
+<!--                                                                    发送验证信息 >>-->
+<!--                                                                    &lt;!&ndash;                                                    <i class="icon sign spy"></i>&ndash;&gt;-->
+<!--                                                                </a>-->
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="field">-->
+<!--                                                        <a id="vNext" class="ui orange right labeled icon button fluid" href="#">-->
+<!--                                                            确定-->
+<!--                                                        </a>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--&lt;!&ndash;                                重置密码&ndash;&gt;-->
+<!--                                -->
+
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+</div>
+
+<div class="ui blue inverted vertical footer segment">
+    <div class="ui inverted stackable grid">
+        <div class="ui inverted center aligned six wide column">
+            <p class="ui inverted">Community</p>
+        </div>
+        <div class="ui center aligned seven wide column">
+            <a class="ui inverted sub header" href="#">法律声明</a> |
+            <a class="ui inverted sub header" href="#">隐私政策声明</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<!--<script-->
+<!--        src="https://code.jquery.com/jquery-3.1.1.min.js"-->
+<!--        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="-->
+<!--        crossorigin="anonymous"></script>-->
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="js/verify.min.js"></script>
+<!--验证码-->
+<script>
+    $('#vcode').slideVerify({
+        type : 2,		//类型
+        vOffset : 5,	//误差量，根据需求自行调整
+        vSpace : 5,	//间隔
+        imgName : ['1.jpg', '2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg'],
+        imgSize : {
+            width:'300px',
+            height: '200px',
+        },
+        blockSize : {
+            width: '40px',
+            height: '40px',
+        },
+        barSize : {
+            width : '300px',
+            height : '40px',
+        },
+        ready : function() {
+        },
+        success : function() {
+            // alert('验证成功，添加你自己的代码！');
+            // 手机或邮箱验证
+            $('.ui.page.dimmer.m-vcode')
+                .dimmer('show')
+            ;
+        },
+        error : function() {
+//		        	alert('验证失败！');
+        }
+    });
+
+    // $('#vNext').click(function () {
+    //
+    //     $('.ui.page.dimmer.m-vcode')
+    //         .dimmer('hide')
+    //     ;
+    //
+    //     $('.ui.page.dimmer.m-pwd')
+    //         .dimmer('show')
+    //     ;
+    // });
+
+</script>
+</body>
+</html>
